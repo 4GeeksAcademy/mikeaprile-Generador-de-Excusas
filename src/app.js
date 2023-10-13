@@ -1,9 +1,10 @@
 import "./style.css";
 
 window.onload = () => {
-  document.querySelector("#The-excuse").innerHTML = generateExcuse();
+  document.querySelector("#btn").addEventListener("click", () => {
+    document.querySelector("#The-excuse").innerHTML = generateExcuse();
+  });
 };
-
 let generateExcuse = () => {
   let who = ["The dog ", "My grandma ", "His turtle ", "My bird "];
   let action = ["ate ", "peed ", "crushed ", "broke "];
