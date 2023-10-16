@@ -6,9 +6,23 @@ window.onload = () => {
   });
 };
 let generateExcuse = () => {
-  let who = ["The dog ", "My grandma ", "His turtle ", "My bird "];
-  let action = ["ate ", "peed ", "crushed ", "broke "];
-  let what = ["my homework ", "the keys ", "the car "];
+  let who = [
+    "The dog ", 
+    "My grandma ", 
+    "His turtle ", 
+    "My bird "
+  ];
+  let action = [
+    "ate ", 
+    "peed ", 
+    "crushed ", 
+    "broke "
+  ];
+  let what = [
+    "my homework ", 
+    "the keys ", 
+    "the car "
+  ];
   let when = [
     "before the class",
     "right on time",
@@ -17,6 +31,7 @@ let generateExcuse = () => {
     "while I was praying"
   ];
 
+  //Randomizador
   let whoIndex = Math.floor(Math.random() * who.length);
   let actionIndex = Math.floor(Math.random() * action.length);
   let whatIndex = Math.floor(Math.random() * what.length);
